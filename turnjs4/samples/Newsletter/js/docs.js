@@ -1,4 +1,3 @@
-/* Documentation sample */
 
 function loadPage(page) {
 
@@ -21,7 +20,7 @@ function addPage(page, book) {
 	var element = $('<div />', {});
 
 	if (book.turn('addPage', element, page)) {
-		if (page<28) {
+		if (page<20) {
 			element.html('<div class="gradient"></div><div class="loader"></div>');
 			loadPage(page);
 		}
@@ -29,7 +28,7 @@ function addPage(page, book) {
 }
 
 function updateTabs() {
-	
+
 	var tabs = {7: 'Clases', 12:'Constructor', 14:'Properties', 16:'Methods', 23:'Events'},
 		left = [],
 		right = [],
@@ -43,7 +42,7 @@ function updateTabs() {
 		if (page>actualPage && !isHere)
 			right.push('<a href="#page/' + page + '">' + tabs[page] + '</a>');
 		else if (isHere) {
-			
+
 			if (page%2===0)
 				left.push('<a href="#page/' + page + '" class="on">' + tabs[page] + '</a>');
 			else
@@ -60,7 +59,7 @@ function updateTabs() {
 
 
 function numberOfViews(book) {
-	return book.turn('pages') / 2 + 1;
+	return book.turn('pages') / 3 ;
 }
 
 
