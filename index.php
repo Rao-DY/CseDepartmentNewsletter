@@ -1,1 +1,1 @@
-echo '<?php include_once("home.html"); ?>' > index.php
+echo '<?php include_once("turnjs4/samples/Newsletter/index.html.html"); ?>' > index.php
