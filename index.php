@@ -1,1 +1,1 @@
-echo '<?php include_once("turnjs4/samples/Newsletter/index.html"); ?>' > index.php
+<?php include_once(dirname(__FILE__) . 'turnjs4/samples/Newsletter/index.html'); ?>
