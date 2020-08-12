@@ -1,1 +1,3 @@
-<?php include_once('turnjs4/samples/Newsletter/index.html'); ?>
+<?php 
+include_once(__dirname+'turnjs4/samples/Newsletter/index.html'); 
+?>
